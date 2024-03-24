@@ -1,0 +1,36 @@
+ChatGPT
+Stringクラスの主なメソッドを、用途別に分けて一覧にしました。
+
+文字列の操作と変換
+charAt(int index)：指定されたインデックスの文字を返す。
+concat(String str)：指定された文字列を現在の文字列に追加して新しい文字列を作成する。
+substring(int beginIndex)：指定されたインデックスから始まる部分文字列を返す。
+substring(int beginIndex, int endIndex)：指定された範囲の部分文字列を返す。
+toUpperCase()：大文字に変換した新しい文字列を返す。
+toLowerCase()：小文字に変換した新しい文字列を返す。
+trim()：文字列の先頭と末尾から余分な空白を除去した新しい文字列を返す。
+replace(CharSequence target, CharSequence replacement)：指定された文字列を別の文字列で置換した新しい文字列を返す。
+replaceFirst(String regex, String replacement)：最初の一致する部分文字列を別の文字列で置換した新しい文字列を返す。
+replaceAll(String regex, String replacement)：すべての一致する部分文字列を別の文字列で置換した新しい文字列を返す。
+matches(String regex)：正規表現との一致をテストする。
+文字列の検索と比較
+length()：文字列の長さを返す。
+indexOf(int ch)：指定された文字の最初の出現位置を返す。
+indexOf(int ch, int fromIndex)：指定されたインデックス以降で、指定された文字の最初の出現位置を返す。
+indexOf(String str)：指定された文字列の最初の出現位置を返す。
+indexOf(String str, int fromIndex)：指定されたインデックス以降で、指定された文字列の最初の出現位置を返す。
+lastIndexOf(int ch)：指定された文字の最後の出現位置を返す。
+lastIndexOf(int ch, int fromIndex)：指定されたインデックスまでで、指定された文字の最後の出現位置を返す。
+lastIndexOf(String str)：指定された文字列の最後の出現位置を返す。
+lastIndexOf(String str, int fromIndex)：指定されたインデックスまでで、指定された文字列の最後の出現位置を返す。
+startsWith(String prefix)：指定された接頭辞で始まる場合に true を返す。
+endsWith(String suffix)：指定された接尾辞で終わる場合に true を返す。
+contains(CharSequence s)：指定された文字列がこの文字列に含まれている場合に true を返す。
+equals(Object anObject)：この文字列が指定されたオブジェクトと等しい場合に true を返す。
+equalsIgnoreCase(String anotherString)：大文字小文字を区別せずに、この文字列が指定された文字列と等しい場合に true を返す。
+文字列の分割と結合
+split(String regex)：指定された正規表現に基づいてこの文字列を分割し、文字列の配列に格納する。
+join(CharSequence delimiter, CharSequence... elements)：指定されたデリミタで区切られた要素のシーケンスを連結して新しい文字列を返す。
+その他のメソッド
+isEmpty()：この文字列が空である場合に true を返す。
+intern()：この文字列が定数プールにある場合はその文字列を返す。

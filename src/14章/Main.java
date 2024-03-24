@@ -15,6 +15,13 @@ public class Main {
     h2.hp = 100;
     System.out.println(h1 + "    " + h2);
 
+    h1.setRandomMoney();
+    System.out.println(Hero.money);
+    System.out.println(h1.money);
+    h1.money = 300;
+    System.out.println(h2.money);
+
+
     // 以下の実行は、違う内容ですとなる。「同じ内容です」とするために、Heroクラスで
     // equalsメソッドのオーバーライドをします。要確認。
 
